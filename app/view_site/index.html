@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="manifest" href="manifest.json">
+	<meta name="application-name" content="Web Starter Kit">
+	<meta name="theme-color" content="#000000">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+	<link href="./../styles/main.css" rel="stylesheet">
+
+	<title>Title</title>
+
+	<script>
+		// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		// 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		// 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		// 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		// 		ga('create', 'UA-59198184-2', 'auto');
+		// 		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+
+	<nav class="app-nav">
+		<div class="app-nav__group app-nav__group--border-no">
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Dashboard">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="20px" height="20.666px" viewBox="0 0 20 20.666" enable-background="new 0 0 20 20.666" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M20,11.435h-3.077v9.231h-4.615v-6.154H7.692v6.154H3.077v-9.231H0l10.093-9.908L20,11.435z"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="app-nav__group">
+			<div class="app-nav__container app-nav__container--active">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Clients">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M19,16.736V19H0v-2.264l6.333-4.069v-1.583c-0.391,0-0.752-0.393-1.084-1.18
+										C4.916,9.118,4.75,8.455,4.75,7.917V4.75c0-1.309,0.464-2.428,1.394-3.357C7.072,0.465,8.191,0,9.5,0
+										c1.309,0,2.428,0.465,3.356,1.393c0.929,0.929,1.394,2.048,1.394,3.357v3.167c0,0.538-0.166,1.201-0.499,1.987
+										c-0.332,0.787-0.694,1.18-1.084,1.18v1.583L19,16.736z" />
+					</svg>
+				</a>
+			</div>
+			<div class="app-nav__container">
+				<a class="app-nav__icon " href="#" data-toggle="tooltip" data-placement="right" title="Equipment Database">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="17px" height="18.545px" viewBox="0 0 17 18.545" enable-background="new 0 0 17 18.545" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M17,0v15.455L15.455,17V1.545H3.864L2.318,3.091h11.591v15.455H0V2.705L2.705,0H17z"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="app-nav__group">
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Workorders">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="17px" height="18.545px" viewBox="0 0 17 18.545" enable-background="new 0 0 17 18.545" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M17,0v18.545H0V0H17z M15.455,3.091H1.545V17h13.909V3.091z M4.636,4.636H3.091v1.545h1.545
+										V4.636z M4.636,7.727H3.091v1.545h1.545V7.727z M4.636,10.818H3.091v1.545h1.545V10.818z M4.636,13.909H3.091v1.545h1.545V13.909z
+										M13.909,4.636H6.182v1.545h7.727V4.636z M13.909,7.727H6.182v1.545h7.727V7.727z M13.909,10.818H6.182v1.545h7.727V10.818z
+										M13.909,15.455H6.182v-1.545h7.727V15.455z" />
+					</svg>
+				</a>
+			</div>
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Proposals">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="18px" height="16.625px" viewBox="0 0 18 16.625" enable-background="new 0 0 18 16.625" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M16.625,8.025v2.554c0,1.662-0.592,3.086-1.776,4.27c-1.184,1.184-2.607,1.776-4.269,1.776
+										H6.045c-1.662,0-3.086-0.592-4.269-1.776C0.592,13.665,0,12.242,0,10.579V6.045c0-1.662,0.592-3.085,1.776-4.27
+										C2.96,0.592,4.383,0,6.045,0h4.534c0.605,0,1.244,0.116,1.92,0.348l-2.69,2.675H4.534c-0.413,0-0.768,0.149-1.066,0.446
+										C3.171,3.766,3.023,4.121,3.023,4.534v7.557c0,0.413,0.149,0.768,0.446,1.066c0.297,0.297,0.652,0.446,1.066,0.446h7.557
+										c0.413,0,0.768-0.149,1.066-0.446c0.297-0.297,0.446-0.652,0.446-1.066v-1.043L16.625,8.025z M9.446,11.365L18,2.796l-2.055-2.07
+										L9.446,7.239L7.224,5.018L5.169,7.073L9.446,11.365z" />
+					</svg>
+				</a>
+			</div>
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Proposals opportunities">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="18px" height="16.88px" viewBox="0 0 18 16.88" enable-background="new 0 0 18 16.88" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M16.88,9.929v0.813c0,1.688-0.601,3.133-1.803,4.335c-1.202,1.202-2.647,1.803-4.335,1.803
+										H6.138c-1.688,0-3.133-0.601-4.335-1.803C0.601,13.875,0,12.43,0,10.742V6.138C0,4.45,0.601,3.005,1.803,1.803
+										C3.005,0.601,4.45,0,6.138,0h4.005l0.031,1.228C8.814,1.555,7.698,2.169,6.829,3.069H4.604c-0.42,0-0.78,0.151-1.082,0.453
+										C3.22,3.824,3.069,4.184,3.069,4.604v7.673c0,0.42,0.151,0.78,0.453,1.082c0.302,0.302,0.662,0.453,1.082,0.453h7.673
+										c0.42,0,0.78-0.151,1.082-0.453c0.302-0.302,0.453-0.662,0.453-1.082L16.88,9.929z M12.476,10.266L18,5.294l-5.509-4.88v3.315
+										c-0.072,0-0.169,0.005-0.292,0.015c-0.123,0.01-0.368,0.051-0.736,0.123c-0.369,0.072-0.724,0.166-1.066,0.284
+										c-0.343,0.118-0.734,0.307-1.174,0.568C8.783,4.98,8.391,5.282,8.048,5.624c-0.343,0.343-0.659,0.793-0.951,1.35
+										C6.806,7.532,6.604,8.154,6.491,8.839C6.798,8.45,7.215,8.123,7.742,7.857c0.527-0.266,1.054-0.447,1.581-0.545
+										c0.527-0.097,1.033-0.169,1.52-0.215c0.486-0.046,0.882-0.064,1.189-0.054l0.446,0.015V10.266z" />
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="app-nav__group">
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Municipalities">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M17,15.455V17H0v-1.545H17z M1.159,13.909h14.682l-1.932-2.318V7.727l1.545-1.545V0h-1.545
+									v3.091h-1.545V0H9.273v3.091H7.727V0H4.636v3.091H3.091V0H1.545v6.182l1.545,1.545v3.864L1.159,13.909z" />
+					</svg>
+				</a>
+			</div>
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Contractors">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="19px" height="17.417px" viewBox="0 0 19 17.417" enable-background="new 0 0 19 17.417" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M12.667,3.167h4.75c0.433,0,0.805,0.156,1.116,0.467C18.844,3.945,19,4.317,19,4.75v6.333
+										h-7.917V9.5H7.917v1.583H0V4.75c0-0.433,0.156-0.805,0.467-1.116C0.778,3.322,1.15,3.167,1.583,3.167h4.75V1.583
+										c0-0.433,0.156-0.805,0.467-1.116C7.112,0.156,7.484,0,7.917,0h3.167c0.433,0,0.805,0.156,1.116,0.467
+										c0.311,0.311,0.467,0.683,0.467,1.116V3.167z M19,12.667v3.167c0,0.433-0.156,0.805-0.467,1.116
+										c-0.311,0.311-0.683,0.467-1.116,0.467H1.583c-0.433,0-0.805-0.156-1.116-0.467C0.156,16.638,0,16.266,0,15.833v-3.167H19z
+										M7.917,3.167h3.167V1.583H7.917V3.167z" />
+					</svg>
+				</a>
+			</div>
+			<div class="app-nav__container">
+				<a class="app-nav__icon" href="#" data-toggle="tooltip" data-placement="right" title="Settings">
+					<svg class="app-nav__icon-img" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 x="0px" y="0px" width="18px" height="17.984px" viewBox="0 0 18 17.984" enable-background="new 0 0 18 17.984" xml:space="preserve">
+						<path class="app-nav__icon-img--grey" d="M7.166,15.507c-0.512-0.136-1.003-0.34-1.474-0.612l-0.079-0.047l-2.085,1.27
+										c-0.627-0.481-1.176-1.029-1.646-1.646l1.254-2.101l-0.047-0.079c-0.251-0.46-0.449-0.946-0.596-1.458L2.462,10.74l-2.368-0.596
+										C0.032,9.716,0,9.329,0,8.984c0-0.261,0.032-0.643,0.094-1.145l2.368-0.596L2.493,7.15c0.136-0.481,0.334-0.967,0.596-1.458
+										l0.047-0.078L1.882,3.512c0.481-0.606,1.029-1.155,1.646-1.646l2.085,1.27l0.079-0.047c0.46-0.261,0.951-0.465,1.474-0.611
+										l0.079-0.016l0.595-2.383C8.331,0.026,8.718,0,9,0c0.355,0,0.742,0.026,1.161,0.079l0.595,2.383l0.094,0.016
+										c0.502,0.146,0.988,0.35,1.458,0.611l0.079,0.047l2.101-1.27c0.627,0.491,1.171,1.04,1.631,1.646l-1.254,2.101l0.047,0.078
+										c0.24,0.439,0.444,0.925,0.611,1.458l0.015,0.094l2.383,0.596C17.973,8.31,18,8.691,18,8.984c0,0.355-0.027,0.742-0.079,1.16
+										l-2.383,0.596l-0.015,0.094c-0.157,0.512-0.361,0.998-0.611,1.458l-0.047,0.079l1.254,2.101c-0.502,0.637-1.046,1.186-1.631,1.646
+										l-2.101-1.27l-0.079,0.047c-0.491,0.272-0.978,0.476-1.458,0.612l-0.094,0.031l-0.595,2.368C9.669,17.958,9.282,17.984,9,17.984
+										c-0.355,0-0.742-0.026-1.161-0.078l-0.595-2.368L7.166,15.507z M5.629,8.984c0,0.93,0.329,1.725,0.988,2.383
+										C7.275,12.026,8.07,12.355,9,12.355c0.93,0,1.725-0.329,2.383-0.988c0.658-0.658,0.988-1.453,0.988-2.383
+										c0-0.92-0.329-1.709-0.988-2.368C10.725,5.958,9.93,5.629,9,5.629c-0.93,0-1.725,0.329-2.383,0.988
+										C5.958,7.275,5.629,8.064,5.629,8.984z" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<header class="app-header">
+		<div class="app-header__logo">
+			<a href="#">
+				<img class="app-header__logo-img" src="./../images/logo.png">
+			</a>
+			<div class="app-header__logo-title">AMERICAN BACKFLOW & FIRE PREVENTION</div>
+		</div>
+		<div class="app-header__logout">
+			<div class="app-header__logout-name">SuperAdmin</div>
+			<a class="app-header__logout-img" href="#">
+				<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="22.365px" height="19.25px" viewBox="0 0 22.365 19.25" enable-background="new 0 0 22.365 19.25" xml:space="preserve">
+					<g>
+						<path fill="#FFFFFF" d="M6.125,0h7c0.245,0,0.452,0.085,0.621,0.254S14,0.63,14,0.875v1.75c0,0.245-0.085,0.452-0.254,0.621
+						C13.577,3.416,13.37,3.5,13.125,3.5H5.25c-0.479,0-0.89,0.172-1.233,0.516C3.672,4.36,3.5,4.772,3.5,5.25V14
+						c0,0.479,0.172,0.89,0.517,1.234C4.36,15.578,4.771,15.75,5.25,15.75h7.875c0.245,0,0.452,0.085,0.621,0.254S14,16.38,14,16.625
+						v1.75c0,0.245-0.085,0.452-0.254,0.621c-0.169,0.169-0.376,0.254-0.621,0.254h-7c-1.925,0-3.428-0.54-4.506-1.619
+						C0.539,16.552,0,15.05,0,13.125v-7C0,4.2,0.539,2.698,1.619,1.619C2.697,0.54,4.2,0,6.125,0z M16.415,4.078l5.67,4.97
+						c0.187,0.164,0.28,0.356,0.28,0.578s-0.094,0.414-0.28,0.578l-5.67,4.97c-0.187,0.164-0.345,0.216-0.473,0.158
+						c-0.128-0.058-0.192-0.21-0.192-0.455V12.25h-4.375c-0.245,0-0.452-0.084-0.621-0.254c-0.169-0.169-0.254-0.376-0.254-0.621v-3.5
+						c0-0.245,0.085-0.452,0.254-0.621S11.13,7,11.375,7h4.375V4.375c0-0.245,0.064-0.396,0.192-0.455
+						C16.07,3.862,16.228,3.914,16.415,4.078z" />
+					</g>
+				</svg>
+			</a>
+		</div>
+	</header>
+
+	<div class="app-main container-fluid">
+		<div class="app-wrapper">
+			<div class="app-account-main">
+				<div class="app-detailed__wrapper">
+					<div class="app-detailed__info app-wrapper">
+						<div class="app-detailed__info__img app-detailed__info__img--site"></div>
+						<div class="app-detailed__info__data app-wrapper">
+							<div class="app-detailed__info__data-id app-save-space">25693 - Group Account</div>
+							<div class="app-detailed__info__data-contacts">
+								<div class="app-detailed__info__data-title app-cut-string">Shops of Ukraine</div>
+								<div class="app-detailed__info__data-address app-cut-string">36-42 N. Apple, Chicago, IL 60052</div>
+							</div>
+							<div class="app-detailed__info__data-link app-save-space">Linked to:</div>
+						</div>
+					</div>
+					<div class="app-account-main__notes">
+						<div class="app-wrapper">
+							<div class="app-account-main__notes-title">Notes
+							</div>
+							<div class="app-account-main__notes-text app-detailed__notes app-cut-string">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. ffgfvgffchcdfrtrfrtherfhhdrjutdjudfrikyfttikyftidrtderdsersderdsyrsusdrdktdfikfdrikdfitdfidud
+								ghfghfghfgfhfghfghfghfghfghfghfghghghggfhgghfhgf fhgfhghf . hhhhhghghg</div>
+						</div>
+					</div>
+				</div>
+				<div class="app-detailed__button-container">
+					<a class="app-detailed__button app-detailed__button--red app-detailed__button--shadow btn" data-toggle="modal" data-target="#deleteModal">Delete</a>
+					<a class="app-detailed__button app-detailed__button--blue app-detailed__button--shadow btn">Edit</a>
+				</div>
+			</div>
+			<div class="app-account-addition">
+				<div class="app-wrapper">
+					<div class="app-detailed__addition__container--large">
+						<div class="app-account-addition__details app-account-addition__details--account">
+							<div class="app-contact-list__container app-detailed__addition__container__title">
+								<table class="table app-contact-list__table">
+									<thead>
+										<tr>
+											<th colspan="2">Primary Account Contacts (6)</th>
+											<th>Authorizer</th>
+											<th>Access</th>
+											<th>Payments</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+							<div class="app-contact-list__overflow app-scrollbar">
+								<table class="table app-contact-list__table">
+									<tbody>
+										<tr>
+											<td>
+												<div><img class="app-contact-list__contact-icon" src="../images/contact.svg" alt="image contact"><a class="app-link__title app-contact-list__contact-name"
+													 href="#">John Doe</a></div>
+												<div class="app-contact-main__line">
+													<div class="sprite sprite--phone"></div>
+													<div class="app-contact-main__line-text">(111) 222-2222
+														<div class="app-contact-main__ext app-color--inactive">Ext.:</div>
+														234
+													</div>
+												</div>
+												<div class="app-contact-main__line">
+													<div class="sprite sprite--mobile"></div>
+													<div class="app-contact-main__line-text">(111) 333-3333</div>
+												</div>
+												<div class="app-contact-main__line">
+													<div class="sprite sprite--fax"></div>
+													<div class="app-contact-main__line-text">(111) 444-4444</div>
+												</div>
+											</td>
+											<td>
+												<div class="app-line--colored">Manager at <img class="app-contact-list__company-icon" src="../images/company.svg" alt="image contact"><a class="app-link__select app-weight--bold"
+													 href="#">John Doe</a></div>
+												<div class="app-contact-main__line ">
+													<div class="sprite sprite--mail"></div>
+													<div class="app-contact-main__line-text app-cut-string">33, Kiev, NV 567890</div>
+												</div>
+												<div class="app-contact-main__line ">
+													<div class="sprite sprite--address"></div>
+													<div class="app-contact-main__line-text app-cut-string">address, Paris, NM 54454</div>
+												</div>
+												<div class="app-contact-main__line ">
+													<div class="sprite sprite--dog"></div>
+													<div class="app-contact-main__line-text app-cut-string">contact3@gmail.com</div>
+												</div>
+											</td>
+											<td>
+												<div class="app-contact-list__authorizer">
+													<svg class="app-color-svg--active" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="13.792px" height="20.674px" viewBox="0 0 13.792 20.674" enable-background="new 0 0 13.792 20.674"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M6.888,0c0.877,1.473,1.874,3.16,2.884,4.839c0.912,1.516,1.897,2.993,2.745,4.544
+															c0.902,1.65,1.476,3.42,1.21,5.347c-0.423,3.06-2.543,5.261-5.576,5.825c-3.605,0.67-7.096-1.535-7.952-5.023
+															c-0.414-1.685-0.151-3.31,0.514-4.87C1.088,9.78,1.537,8.923,2.025,8.098c0.701-1.185,1.494-2.315,2.201-3.497
+															C5.177,3.012,6.082,1.396,6.888,0z M6.238,18.908c0.099-0.092,0.493-0.283,0.542-0.54c0.094-0.49-0.309-0.622-0.758-0.656
+															c-1.816-0.141-3.111-1.44-3.253-3.258c-0.035-0.446-0.157-0.815-0.666-0.776c-0.476,0.036-0.536,0.418-0.528,0.828
+															C1.619,16.782,3.695,18.862,6.238,18.908z" />
+															</g>
+														</g>
+													</svg>
+													<svg class="app-color-svg--inactive" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="16.55px" height="19.053px" viewBox="0 0 16.55 19.053" enable-background="new 0 0 16.55 19.053"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M6.841,0c0.545,0.25,1.068,0.536,1.544,0.905c0.833,0.647,1.523,1.423,2.099,2.304
+															c0.751,1.149,1.262,2.403,1.627,3.72c0.004,0.014,0.01,0.028,0.02,0.057c0.212-0.146,0.334-0.355,0.439-0.572
+															c0.259-0.54,0.302-1.115,0.229-1.697c-0.046-0.364-0.145-0.722-0.222-1.095c0.098,0.085,0.211,0.171,0.31,0.27
+															c0.987,0.986,1.807,2.094,2.459,3.328c0.414,0.784,0.743,1.6,0.959,2.46c0.173,0.688,0.258,1.388,0.245,2.096
+															c-0.019,0.987-0.24,1.928-0.664,2.823c-0.4,0.844-0.949,1.582-1.599,2.243c-0.519,0.529-1.087,1.005-1.706,1.415
+															c-0.384,0.255-0.776,0.498-1.165,0.745c-0.021,0.013-0.044,0.021-0.102,0.048c0.96-1.983,1.073-4.02,0.533-6.091
+															c-0.539-2.065-1.64-3.775-3.388-5.068c0.135,1.949-0.303,3.701-1.53,5.223c0.048-0.471,0.063-0.937-0.02-1.403
+															c-0.084-0.467-0.236-0.906-0.515-1.319c-0.083,0.284-0.155,0.547-0.238,0.806c-0.269,0.842-0.672,1.618-1.159,2.353
+															c-0.443,0.667-0.832,1.357-0.973,2.162c-0.096,0.543-0.078,1.081,0.029,1.619c0.107,0.535,0.283,1.047,0.513,1.541
+															c0.023,0.049,0.039,0.1,0.034,0.173c-0.284-0.172-0.577-0.329-0.849-0.518c-0.52-0.362-1.044-0.72-1.535-1.119
+															c-0.685-0.557-1.263-1.213-1.676-2.005c-0.463-0.889-0.596-1.832-0.515-2.819c0.081-0.985,0.377-1.905,0.804-2.791
+															c0.387-0.804,0.763-1.614,1.129-2.427c0.236-0.526,0.38-1.081,0.434-1.657c0.002-0.024,0.007-0.047,0.017-0.107
+															C2.979,6.573,3.127,7.612,3.16,8.681c0.015,0.002,0.03,0.005,0.044,0.007c0.106-0.13,0.213-0.259,0.317-0.391
+															c0.661-0.843,1.281-1.715,1.817-2.643c0.506-0.877,0.937-1.79,1.217-2.765c0.206-0.715,0.329-1.445,0.309-2.193
+															C6.859,0.465,6.83,0.232,6.811,0C6.821,0,6.831,0,6.841,0z" />
+															</g>
+														</g>
+													</svg>
+												</div>
+												<div class="app-contact-list__authorizer">
+													<svg class="app-color-svg--inactive" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="18.619px" height="18.614px" viewBox="0 0 18.619 18.614" enable-background="new 0 0 18.619 18.614"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M15.669,0.279c-0.689,0.683-1.326,1.312-1.96,1.945c-0.796,0.795-0.792,1.363,0.007,2.164
+															c0.228,0.229,0.454,0.461,0.687,0.685c0.582,0.559,1.224,0.569,1.801,0.009c0.623-0.604,1.229-1.226,1.845-1.837
+															c0.081-0.08,0.174-0.147,0.269-0.226c1.011,2.374-0.636,5.366-3.247,5.853c-0.651,0.122-1.357,0.079-2.016-0.027
+															c-0.401-0.064-0.619,0.02-0.879,0.281c-2.915,2.933-5.842,5.855-8.757,8.787c-0.56,0.563-1.2,0.837-1.983,0.631
+															c-1.397-0.369-1.902-2.053-0.942-3.131c0.328-0.368,0.692-0.704,1.041-1.053c2.659-2.66,5.315-5.323,7.983-7.973
+															c0.26-0.258,0.322-0.471,0.233-0.84c-0.792-3.281,2.103-6.18,5.4-5.428C15.294,0.153,15.432,0.206,15.669,0.279z M1.79,17.433
+															c0.343-0.001,0.676-0.311,0.649-0.649c-0.03-0.384-0.246-0.639-0.65-0.638c-0.401,0.001-0.622,0.247-0.646,0.638
+															C1.122,17.128,1.444,17.434,1.79,17.433z" />
+															</g>
+														</g>
+													</svg>
+													<svg class="app-color-svg--active" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="20.364px" height="19.839px" viewBox="0 0 20.364 19.839" enable-background="new 0 0 20.364 19.839"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M8.145,16.339C3.585,16.295-0.04,12.629,0,8.104c0.04-4.512,3.731-8.156,8.209-8.104
+															c4.544,0.053,8.165,3.736,8.119,8.24C16.284,12.66,12.713,16.32,8.145,16.339z M10.492,8.223c0.054-1.232-0.957-2.327-2.198-2.381
+															c-1.325-0.058-2.403,0.921-2.466,2.24c-0.059,1.245,0.953,2.363,2.188,2.415C9.365,10.553,10.432,9.573,10.492,8.223z M1.691,10.7
+															c0.02-0.004,0.039-0.007,0.059-0.011C1.664,8.183,2.454,6.006,4.228,4.231c1.773-1.774,3.95-2.56,6.457-2.507
+															c-0.15-0.099-0.299-0.182-0.458-0.233C8.957,1.085,7.673,1.058,6.386,1.398c-2.893,0.765-4.953,3.223-5.202,6.21
+															C1.108,8.526,1.204,9.43,1.507,10.305C1.554,10.442,1.629,10.569,1.691,10.7z" />
+																<path fill="#FFFFFF" d="M18.048,12.365c-0.546-0.221-0.925-0.583-1.101-1.132c-0.285-0.891,0.191-1.849,1.072-2.17
+															c0.877-0.32,1.852,0.114,2.212,0.984c0.358,0.863-0.032,1.858-0.895,2.245c-0.16,0.072-0.229,0.159-0.272,0.328
+															c-0.447,1.75-1.494,3.074-2.949,4.098c-1.23,0.866-2.599,1.425-4.057,1.772c-0.161,0.038-0.208,0.107-0.221,0.261
+															c-0.053,0.614-0.561,1.084-1.18,1.086c-1.674,0.005-3.347,0.004-5.021,0c-0.573-0.001-1.078-0.46-1.148-1.03
+															c-0.048-0.391-0.101-0.782-0.125-1.175C4.33,17.068,4.69,16.8,5.231,16.972c0.766,0.244,1.544,0.424,2.346,0.5
+															c1.179,0.111,2.309-0.134,3.428-0.469c0.013-0.004,0.026-0.011,0.039-0.015c0.501-0.159,0.724-0.059,0.938,0.432
+															c0.708-0.177,1.393-0.425,2.054-0.737c1.263-0.596,2.378-1.38,3.191-2.541C17.601,13.605,17.88,13.024,18.048,12.365z"
+																/>
+															</g>
+														</g>
+													</svg>
+												</div>
+											</td>
+											<td>
+												<div class="app-contact-list__minus"></div>
+											</td>
+											<td>
+												<div class="app-contact-list__check">✔</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div><img class="app-contact-list__contact-icon" src="../images/contact.svg" alt="image contact"><a class="app-link__title app-contact-list__contact-name"
+													 href="#">John Doe</a></div>
+												<div class="app-contact-main__line">
+													<div class="sprite sprite--phone"></div>
+													<div class="app-contact-main__line-text">(111) 222-2222
+														<div class="app-contact-main__ext app-color--inactive">Ext.:</div>
+														234
+													</div>
+												</div>
+												<div class="app-contact-main__line">
+													<div class="sprite sprite--mobile"></div>
+													<div class="app-contact-main__line-text">(111) 333-3333</div>
+												</div>
+												<div class="app-contact-main__line">
+													<div class="sprite sprite--fax"></div>
+													<div class="app-contact-main__line-text">(111) 444-4444</div>
+												</div>
+											</td>
+											<td>
+												<div class="app-line--colored">Manager at <img class="app-contact-list__company-icon" src="../images/company.svg" alt="image contact"><a class="app-link__select app-weight--bold"
+													 href="#">John Doe</a></div>
+												<div class="app-contact-main__line ">
+													<div class="sprite sprite--mail"></div>
+													<div class="app-contact-main__line-text app-color--inactive">No Mailing Address <img class="app-contact-list__warning" alt="warning image" src="../images/warning.svg"></div>
+												</div>
+												<div class="app-contact-main__line ">
+													<div class="sprite sprite--address"></div>
+													<div class="app-contact-main__line-text app-cut-string app-color--inactive">No Billing Address <img class="app-contact-list__warning" alt="warning image" src="../images/warning.svg"></div>
+												</div>
+												<div class="app-contact-main__line ">
+													<div class="sprite sprite--dog"></div>
+													<div class="app-contact-main__line-text app-cut-string app-color--inactive">No email <img class="app-contact-list__warning" alt="warning image" src="../images/warning.svg"></div>
+												</div>
+											</td>
+											<td>
+												<div class="app-contact-list__authorizer">
+													<svg class="app-color-svg--active" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="13.792px" height="20.674px" viewBox="0 0 13.792 20.674" enable-background="new 0 0 13.792 20.674"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M6.888,0c0.877,1.473,1.874,3.16,2.884,4.839c0.912,1.516,1.897,2.993,2.745,4.544
+															c0.902,1.65,1.476,3.42,1.21,5.347c-0.423,3.06-2.543,5.261-5.576,5.825c-3.605,0.67-7.096-1.535-7.952-5.023
+															c-0.414-1.685-0.151-3.31,0.514-4.87C1.088,9.78,1.537,8.923,2.025,8.098c0.701-1.185,1.494-2.315,2.201-3.497
+															C5.177,3.012,6.082,1.396,6.888,0z M6.238,18.908c0.099-0.092,0.493-0.283,0.542-0.54c0.094-0.49-0.309-0.622-0.758-0.656
+															c-1.816-0.141-3.111-1.44-3.253-3.258c-0.035-0.446-0.157-0.815-0.666-0.776c-0.476,0.036-0.536,0.418-0.528,0.828
+															C1.619,16.782,3.695,18.862,6.238,18.908z" />
+															</g>
+														</g>
+													</svg>
+													<svg class="app-color-svg--inactive" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="16.55px" height="19.053px" viewBox="0 0 16.55 19.053" enable-background="new 0 0 16.55 19.053"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M6.841,0c0.545,0.25,1.068,0.536,1.544,0.905c0.833,0.647,1.523,1.423,2.099,2.304
+															c0.751,1.149,1.262,2.403,1.627,3.72c0.004,0.014,0.01,0.028,0.02,0.057c0.212-0.146,0.334-0.355,0.439-0.572
+															c0.259-0.54,0.302-1.115,0.229-1.697c-0.046-0.364-0.145-0.722-0.222-1.095c0.098,0.085,0.211,0.171,0.31,0.27
+															c0.987,0.986,1.807,2.094,2.459,3.328c0.414,0.784,0.743,1.6,0.959,2.46c0.173,0.688,0.258,1.388,0.245,2.096
+															c-0.019,0.987-0.24,1.928-0.664,2.823c-0.4,0.844-0.949,1.582-1.599,2.243c-0.519,0.529-1.087,1.005-1.706,1.415
+															c-0.384,0.255-0.776,0.498-1.165,0.745c-0.021,0.013-0.044,0.021-0.102,0.048c0.96-1.983,1.073-4.02,0.533-6.091
+															c-0.539-2.065-1.64-3.775-3.388-5.068c0.135,1.949-0.303,3.701-1.53,5.223c0.048-0.471,0.063-0.937-0.02-1.403
+															c-0.084-0.467-0.236-0.906-0.515-1.319c-0.083,0.284-0.155,0.547-0.238,0.806c-0.269,0.842-0.672,1.618-1.159,2.353
+															c-0.443,0.667-0.832,1.357-0.973,2.162c-0.096,0.543-0.078,1.081,0.029,1.619c0.107,0.535,0.283,1.047,0.513,1.541
+															c0.023,0.049,0.039,0.1,0.034,0.173c-0.284-0.172-0.577-0.329-0.849-0.518c-0.52-0.362-1.044-0.72-1.535-1.119
+															c-0.685-0.557-1.263-1.213-1.676-2.005c-0.463-0.889-0.596-1.832-0.515-2.819c0.081-0.985,0.377-1.905,0.804-2.791
+															c0.387-0.804,0.763-1.614,1.129-2.427c0.236-0.526,0.38-1.081,0.434-1.657c0.002-0.024,0.007-0.047,0.017-0.107
+															C2.979,6.573,3.127,7.612,3.16,8.681c0.015,0.002,0.03,0.005,0.044,0.007c0.106-0.13,0.213-0.259,0.317-0.391
+															c0.661-0.843,1.281-1.715,1.817-2.643c0.506-0.877,0.937-1.79,1.217-2.765c0.206-0.715,0.329-1.445,0.309-2.193
+															C6.859,0.465,6.83,0.232,6.811,0C6.821,0,6.831,0,6.841,0z" />
+															</g>
+														</g>
+													</svg>
+												</div>
+												<div class="app-contact-list__authorizer">
+													<svg class="app-color-svg--inactive" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="18.619px" height="18.614px" viewBox="0 0 18.619 18.614" enable-background="new 0 0 18.619 18.614"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M15.669,0.279c-0.689,0.683-1.326,1.312-1.96,1.945c-0.796,0.795-0.792,1.363,0.007,2.164
+															c0.228,0.229,0.454,0.461,0.687,0.685c0.582,0.559,1.224,0.569,1.801,0.009c0.623-0.604,1.229-1.226,1.845-1.837
+															c0.081-0.08,0.174-0.147,0.269-0.226c1.011,2.374-0.636,5.366-3.247,5.853c-0.651,0.122-1.357,0.079-2.016-0.027
+															c-0.401-0.064-0.619,0.02-0.879,0.281c-2.915,2.933-5.842,5.855-8.757,8.787c-0.56,0.563-1.2,0.837-1.983,0.631
+															c-1.397-0.369-1.902-2.053-0.942-3.131c0.328-0.368,0.692-0.704,1.041-1.053c2.659-2.66,5.315-5.323,7.983-7.973
+															c0.26-0.258,0.322-0.471,0.233-0.84c-0.792-3.281,2.103-6.18,5.4-5.428C15.294,0.153,15.432,0.206,15.669,0.279z M1.79,17.433
+															c0.343-0.001,0.676-0.311,0.649-0.649c-0.03-0.384-0.246-0.639-0.65-0.638c-0.401,0.001-0.622,0.247-0.646,0.638
+															C1.122,17.128,1.444,17.434,1.79,17.433z" />
+															</g>
+														</g>
+													</svg>
+													<svg class="app-color-svg--active" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+													 x="0px" y="0px" width="20.364px" height="19.839px" viewBox="0 0 20.364 19.839" enable-background="new 0 0 20.364 19.839"
+													 xml:space="preserve">
+														<g>
+															<g>
+																<path fill="#FFFFFF" d="M8.145,16.339C3.585,16.295-0.04,12.629,0,8.104c0.04-4.512,3.731-8.156,8.209-8.104
+															c4.544,0.053,8.165,3.736,8.119,8.24C16.284,12.66,12.713,16.32,8.145,16.339z M10.492,8.223c0.054-1.232-0.957-2.327-2.198-2.381
+															c-1.325-0.058-2.403,0.921-2.466,2.24c-0.059,1.245,0.953,2.363,2.188,2.415C9.365,10.553,10.432,9.573,10.492,8.223z M1.691,10.7
+															c0.02-0.004,0.039-0.007,0.059-0.011C1.664,8.183,2.454,6.006,4.228,4.231c1.773-1.774,3.95-2.56,6.457-2.507
+															c-0.15-0.099-0.299-0.182-0.458-0.233C8.957,1.085,7.673,1.058,6.386,1.398c-2.893,0.765-4.953,3.223-5.202,6.21
+															C1.108,8.526,1.204,9.43,1.507,10.305C1.554,10.442,1.629,10.569,1.691,10.7z" />
+																<path fill="#FFFFFF" d="M18.048,12.365c-0.546-0.221-0.925-0.583-1.101-1.132c-0.285-0.891,0.191-1.849,1.072-2.17
+															c0.877-0.32,1.852,0.114,2.212,0.984c0.358,0.863-0.032,1.858-0.895,2.245c-0.16,0.072-0.229,0.159-0.272,0.328
+															c-0.447,1.75-1.494,3.074-2.949,4.098c-1.23,0.866-2.599,1.425-4.057,1.772c-0.161,0.038-0.208,0.107-0.221,0.261
+															c-0.053,0.614-0.561,1.084-1.18,1.086c-1.674,0.005-3.347,0.004-5.021,0c-0.573-0.001-1.078-0.46-1.148-1.03
+															c-0.048-0.391-0.101-0.782-0.125-1.175C4.33,17.068,4.69,16.8,5.231,16.972c0.766,0.244,1.544,0.424,2.346,0.5
+															c1.179,0.111,2.309-0.134,3.428-0.469c0.013-0.004,0.026-0.011,0.039-0.015c0.501-0.159,0.724-0.059,0.938,0.432
+															c0.708-0.177,1.393-0.425,2.054-0.737c1.263-0.596,2.378-1.38,3.191-2.541C17.601,13.605,17.88,13.024,18.048,12.365z"
+																/>
+															</g>
+														</g>
+													</svg>
+												</div>
+											</td>
+											<td>
+												<div class="app-contact-list__minus"></div>
+											</td>
+											<td>
+												<div class="app-contact-list__check">✔</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="app-line--colored app-contact-list__no-contact">
+									<img class="app-contact-list__warning app-contact-list__warning--big" alt="warning image" src="../images/warning.svg">No
+									Primary Payments Contact
+								</div>
+								<div class="app-line--colored app-contact-list__no-contact">
+									<img class="app-contact-list__warning app-contact-list__warning--big" alt="warning image" src="../images/warning.svg">No
+									Primary Payments Contact
+								</div>
+							</div>
+						</div>
+						<div class="app-detailed__button-container">
+							<a class="app-detailed__button app-detailed__button--blue app-detailed__button--shadow btn" data-original-title="" title="">View and Manage All Contacts (0)</a>
+						</div>
+					</div>
+					<div class="app-detailed__addition__content app-detailed__addition__content--account app-detailed__addition__container--small">
+						<div class="app-detailed__addition__container__title">Comments</div>
+						<div class="app-account-addition__details__wrapper">No Comments</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="app-account-site">
+			<div class="app-wrapper app-account-site__header">
+				<div class="app-color--inactive app-font--bold app-font--large">Services and Devices</div>
+				<div>
+					<div class="app-account-addition__header__data">
+						<img class="app-account-addition__header__img" src="../images/backflow.svg">0</div>
+					<div class="app-account-addition__header__data">
+						<img class="app-account-addition__header__img" src="../images/fire.svg">0</div>
+					<div class="app-account-addition__header__data">
+						<img class="app-account-addition__header__img" src="../images/plumbing.svg">0</div>
+					<div class="app-account-addition__header__data">
+						<img class="app-account-addition__header__img" src="../images/alarm.svg">0</div>
+					<a href="#" class="app-detailed__button app-detailed__button--blue app-account-site__button app-detailed__button--shadow btn"
+					 data-target="#addDevice" data-toggle="modal">Add New Device</a>
+				</div>
+			</div>
+		</div>
+		<div class="app-account-site__container">
+			<div class="app-device__info"><span class="app-line--right-text">Services: 100</span>Devices: 1000</div>
+			<ul class="nav nav-tabs">
+				<li id="tab1" class="active"><a data-toggle="tab" href="#panel1" aria-expanded="true">Backflow (12)</a></li>
+				<li id="tab2" class=""><a data-toggle="tab" href="#panel2" aria-expanded="false">Fire (6)</a></li>
+				<li id="tab3" class=""><a data-toggle="tab" href="#panel3" aria-expanded="false">Plumbing (4)</a></li>
+				<li id="tab4" class=""><a data-toggle="tab" href="#panel4" aria-expanded="false">Alarm (4)</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="panel1" class="tab-pane fade active in">
+					<table class="table app-data__table app-bordered--shadow">
+						<thead class="app-data__table-header">
+							<tr>
+								<th></th>
+								<th></th>
+								<th>Service ID</th>
+								<th>Service name</th>
+								<th>Fee</th>
+								<th>Frequency</th>
+								<th>Last test</th>
+								<th>Inspection due</th>
+								<th>Company last tested</th>
+								<th>Last test fee</th>
+								<th></th>
+								<th></th>
+								<!-- <th class="app-data__table-cell--min">Client Type</th>
+															<th class="app-data__table-header--backflow app-data__table-header--img"></th>
+															<th class="app-data__table-header--fire app-data__table-header--img"></th>
+															<th class="app-data__table-header--plumbing app-data__table-header--img"></th>
+															<th class="app-data__table-header--alarm app-data__table-header--img"></th>
+															 -->							</tr>
+						</thead>
+						<tbody class="app-data__table-body">
+							<tr class="app-device__row app-data__table-row--close">
+								<td class="app-data__table-data app-site-styles_align-right">
+									<img src="../images/arrow-top.svg" alt="" class="app-site-styles_row-icon">
+								</td>
+								<td colspan="12">
+									<div class="app-wrapper">
+										<div>
+											<img class="app-line--right-text" src="../images/backflow.svg">
+											<a href="#" class="app-link__select app-weight--bold app-line--align">Backflow Device</a>
+											<span class="app-color--inactive app-line--align">- Some information about device</span>
+											<div class="app-site-styles__options">
+												<img src="../images/delete.svg" alt="" class="app-site-styles__options-icons" id="delete-service">
+												<img src="../images/edit.svg" alt="" class="app-site-styles__options-icons" id="edit-service">
+											</div>
+										</div>
+										<div class="app-line--right-text">
+											<span class="app-account-site__title--wrapper app-line--align">Services: 0</span><span class="app-line--align">Devices: 1</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>
+									<span><img src="../images/settings.svg" alt=""></span>
+									25
+								</td>
+								<td>General Service 1</td>
+								<td>$150</td>
+								<td>5 year</td>
+								<td>12/12/2011</td>
+								<td>12/12/2011</td>
+								<td>Monarch</td>
+								<td>$170</td>
+								<td>
+
+								</td>
+								<td class="app-site-styles__description-device_align-center">
+									<a class="app-detailed__button app-detailed__button--blue app-detailed__button--shadow app-site-styles__description-device_not-underline btn" data-original-title="" title="">Service History</a>
+									<img src="../images/edit.svg" alt="" class="app-site-styles__options-icons app-site-styles__description-device_edit-styles">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="panel2" class="tab-pane fade ">
+					<table class="table app-data__table app-bordered--shadow">
+						<!--<thead class="app-data__table-header">
+							<tr>
+								<th></th>
+								<th></th>
+								<th>ID</th>
+								<th>Account Name</th>
+								<th>Address</th>
+								<th>City</th>
+								<th>State</th>
+								<th>Zip</th>
+								<th>Linked to</th>
+								<th class="app-data__table-cell--min">Client Type</th>
+								<th class="app-data__table-header--backflow app-data__table-header--img"></th>
+								<th class="app-data__table-header--fire app-data__table-header--img"></th>
+								<th class="app-data__table-header--plumbing app-data__table-header--img"></th>
+								<th class="app-data__table-header--alarm app-data__table-header--img"></th>
+							</tr>
+						</thead>-->
+						<tbody class="app-data__table-body">
+							<tr class="app-device__row app-data__table-row--close">
+								<td class="app-data__table-data"></td>
+								<td colspan="10">
+									<div class="app-wrapper">
+										<div>
+											<img class="app-line--right-text" src="../images/fire.svg">
+											<a href="#" class="app-link__select app-weight--bold app-line--align">Backflow 1</a>
+											<span class="app-color--inactive app-line--align">- Some information about device</span>
+										</div>
+										<!--<div class="app-line--right-text">
+											<span class="app-account-site__title--wrapper app-line--align">Services: 0</span><span class="app-line--align">Devices: 1</span>
+										</div>-->
+									</div>
+								</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="panel3" class="tab-pane fade ">
+					<table class="table app-data__table app-bordered--shadow">
+						<!--<thead class="app-data__table-header">
+							<tr>
+								<th></th>
+								<th></th>
+								<th>ID</th>
+								<th>Account Name</th>
+								<th>Address</th>
+								<th>City</th>
+								<th>State</th>
+								<th>Zip</th>
+								<th>Linked to</th>
+								<th class="app-data__table-cell--min">Client Type</th>
+								<th class="app-data__table-header--backflow app-data__table-header--img"></th>
+								<th class="app-data__table-header--fire app-data__table-header--img"></th>
+								<th class="app-data__table-header--plumbing app-data__table-header--img"></th>
+								<th class="app-data__table-header--alarm app-data__table-header--img"></th>
+							</tr>
+						</thead>-->
+						<tbody class="app-data__table-body">
+							<tr class="app-device__row app-data__table-row--close">
+								<td class="app-data__table-data"></td>
+								<td colspan="10">
+									<div class="app-wrapper">
+										<div>
+											<img class="app-line--right-text" src="../images/plumbing.svg">
+											<a href="#" class="app-link__select app-weight--bold app-line--align">Backflow 1</a>
+											<span class="app-color--inactive app-line--align">- Some information about device</span>
+										</div>
+										<!--<div class="app-line--right-text">
+											<span class="app-account-site__title--wrapper app-line--align">Services: 0</span><span class="app-line--align">Devices: 1</span>
+										</div>-->
+									</div>
+								</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="panel4" class="tab-pane fade ">
+					<table class="table app-data__table app-bordered--shadow">
+						<!--<thead class="app-data__table-header">
+							<tr>
+								<th></th>
+								<th></th>
+								<th>ID</th>
+								<th>Account Name</th>
+								<th>Address</th>
+								<th>City</th>
+								<th>State</th>
+								<th>Zip</th>
+								<th>Linked to</th>
+								<th class="app-data__table-cell--min">Client Type</th>
+								<th class="app-data__table-header--backflow app-data__table-header--img"></th>
+								<th class="app-data__table-header--fire app-data__table-header--img"></th>
+								<th class="app-data__table-header--plumbing app-data__table-header--img"></th>
+								<th class="app-data__table-header--alarm app-data__table-header--img"></th>
+							</tr>
+						</thead>-->
+						<tbody class="app-data__table-body">
+							<tr class="app-device__row app-data__table-row--close">
+								<td class="app-data__table-data"></td>
+								<td colspan="10">
+									<div class="app-wrapper">
+										<div>
+											<img class="app-line--right-text" src="../images/alarm.svg">
+											<a href="#" class="app-link__select app-weight--bold app-line--align">Backflow 1</a>
+											<span class="app-color--inactive app-line--align">- Some information about device</span>
+										</div>
+										<!--<div class="app-line--right-text">
+											<span class="app-account-site__title--wrapper app-line--align">Services: 0</span><span class="app-line--align">Devices: 1</span>
+										</div>-->
+									</div>
+								</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="deleteModal" class="modal fade" role="dialog">
+			<div class="modal-dialog app-modal">
+				<!-- Modal content-->
+				<div class="app-modal__content modal-content">
+					<div class="app-modal__body modal-body">
+						<p>Are you sure you want to delete this account?</p>
+					</div>
+					<div class="app-modal__footer">
+						<a class="app-detailed__button app-detailed__button--red btn" data-dismiss="modal">Yes</a>
+						<button type="button" class="app-detailed__button app-detailed__button--blue btn" data-dismiss="modal">No</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="addDevice" class="modal fade" role="dialog">
+			<div class="modal-dialog app-modal">
+				<!-- Modal content-->
+				<div class="app-modal__content modal-content">
+					<div class="app-modal__body modal-body">
+						<p>Please select device to add:</p>
+					</div>
+
+					<form class="app-modal__form" id="selectDeviceForm" autocomplete="off">
+						<div class="form-group">
+							<select name="c" class="selectpicker form-control required">
+									<option value="" disabled selected>Select Device</option>
+									<option data-link="https://www.google.com.ua/?gfe_rd=cr&ei=APYrWd2TJbLi8Aeug4HIBg&gws_rd=ssl#newwindow=1&q=1">1</option>
+									<option data-link="https://www.google.com.ua/?gfe_rd=cr&ei=APYrWd2TJbLi8Aeug4HIBg&gws_rd=ssl#newwindow=1&q=2">2</option>
+									<option data-link="https://www.google.com.ua/?gfe_rd=cr&ei=APYrWd2TJbLi8Aeug4HIBg&gws_rd=ssl#newwindow=1&q=3">3</option>
+									<option data-link="https://www.google.com.ua/?gfe_rd=cr&ei=APYrWd2TJbLi8Aeug4HIBg&gws_rd=ssl#newwindow=1&q=4">4</option>
+								</select>
+						</div>
+						<div class="app-modal__footer--right">
+							<button type="submit" class="app-detailed__button app-detailed__button--blue btn">Yes</a>
+						  <button id="refreshSelect" type="button" class="app-detailed__button app-detailed__button--gray btn" data-dismiss="modal">No</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+		<!-- build:js /scripts/main.min.js -->
+		<script src="./../scripts/main.js"></script>
+		<script src="./../scripts/validation.js"></script>
+		<script src="./../scripts/view.js"></script>
+
+		<!-- endbuild -->
+</body>
+
+</html>

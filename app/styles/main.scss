@@ -1,0 +1,80 @@
+@import "_variables",
+        "_nav",
+        "_header",
+        "_common",
+        "_login_page",
+        "_search_page",
+        "_form",
+        "_bootstrap-modification",
+        "_view_account",
+        "_create_contacts",
+        "_modal",
+        "_detailed_view",
+        "_view_contact",
+        "_contact_sprite",
+        "_search_link",
+        "_normalize",
+        "_contact_list_table",
+        "_set_role",
+	"_view_device",
+	"_form_device",
+	"_view_site";
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    //height: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    padding: 0; 
+    background: $color-content;  
+    width: 100%;
+    display: table;
+    position: relative; 
+}
+
+body, label, table, div, th, td, input, button, span{
+    font-weight:300;
+}
+
+textarea{
+    resize: none;
+}
+
+td>a, td>a:hover, td>a:focus, td>a:active,
+.app-detailed__info__data-link>a, .app-detailed__info__data-link>a:hover, .app-detailed__info__data-link>a:focus, .app-detailed__info__data-link>a:active{
+    color:inherit;
+    text-decoration: underline;
+}
+a, a:focus, a:visited, a:hover, a:active{
+    color: inherit;
+}
+
+@-moz-document url-prefix() {
+    #accountForm .form-control{
+       padding-bottom:3px;
+    }
+    #accountForm .dropdown-toggle{
+       padding: 7px 12px 5px;
+    }
+    .app-detailed__info__data-contacts {
+        padding: 5px 0;
+    }
+    .app-link__wrapper .app-word-breack{
+        word-wrap: break-word;
+        max-width: 350px;
+    }
+    .app-account-main__notes .app-word-breack{
+        word-wrap: break-word;
+        max-width: $width-account-notes;
+    }
+    .app-radio:checked + .app-radio-label::before {
+        line-height: 0.45;
+    }
+    body, html{
+        height: 100%;
+    }
+}

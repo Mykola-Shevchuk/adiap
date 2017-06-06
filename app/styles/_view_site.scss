@@ -1,0 +1,33 @@
+.app-site-styles {
+	&_align-right {
+		text-align: right;
+	}
+
+	&_row-icon {
+		cursor: pointer;
+	}
+
+	&__options {
+		float: right;
+
+		&-icons {
+			width: 15px;
+		    cursor: pointer;
+		    margin-left: 10px;
+		}
+	}
+
+	&__description-device {
+		&_align-center {
+			text-align: center;
+		}
+
+		&_not-underline {
+			text-decoration: none;
+		}
+
+		&_edit-styles {
+			margin-left: 30px;
+		}
+	}
+}

@@ -1,0 +1,176 @@
+.app-device-styles {
+	width: 80%;
+
+	&_title-line {
+		border-bottom: 1px solid hsla(0,0%,100%,.3);
+		padding-bottom: 5px;
+	}
+
+	&_sub-title-margin {
+		padding-top: 10px;
+		clear: both;
+	}
+
+	&__after-title-block {
+		display: inline-block;
+
+		&_styling-link {
+			float: right;
+			width: 200px;
+		}
+	}
+
+	&__ico {
+		
+		&--title {
+			background-image: url(../images/site.svg);
+			background-repeat: no-repeat;
+			background-position: 60% 50%;
+			background-size: 30px;
+			width: 40px;
+			min-height: 100%;
+		}
+	}
+
+	&__second-info {
+		margin: 5px 0 0 10px;
+		padding-top: 10px;
+		border-top: 1px solid hsla(0,0%,100%,.3);
+	}
+
+	&_table {
+		width: 100%;
+		line-height: 2;
+
+		& td:nth-child(odd) {
+			color: hsla(0,0%,100%,.6);
+			vertical-align: top;
+		}
+
+		& td:nth-child(even) {
+			padding-left: 10px;
+			word-break: break-word;
+		}
+	}
+
+	&__note {
+		display: flex;
+		margin-top: 30px;
+
+		&-block {
+			width: 50%;
+			height: 100px;
+		}
+
+		&_wrap-title {
+			white-space: nowrap;
+		}
+	}
+
+	&_table-note {
+		width: 100%;
+
+		& tr:not(:last-child) {
+			border-bottom: 1px solid hsla(0,0%,100%,.3);
+		}
+
+		& td:not(:first-child) {
+			padding: 10px 0;
+		}
+
+		& td:nth-child(odd) {
+			width: 70%;
+		}
+	}
+
+	&__last-edited {
+		width: 35%;
+		float: left;
+		margin-top: 15px;
+		line-height: 33px;
+		color: hsla(0,0%,100%,.6);
+
+		&_uderline-text {
+			text-decoration: underline;
+		}
+	}
+}
+
+.app-device-styles-equipment {
+	width: 20%;
+	margin-left: 2%;
+
+	&_height {
+		height: 435px;
+	}
+
+	&__content {
+		height: 398px;
+    	overflow-y: auto;
+	}
+
+	&__table {
+		width: 100%;
+		text-transform: uppercase;
+
+		& tr {
+			border-bottom: 1px solid hsla(0,0%,100%,.3);
+		}
+
+		& td {
+			height: 50px;
+		}
+
+		& td:nth-child(odd) {
+			padding-left: 30px;
+		}
+
+		&_delete {
+			cursor: pointer;
+		}
+	}
+}
+
+.correct-postion-site-img {
+	background-position: 60% 30%;
+}
+
+.device-block-width {
+	width: 38%;
+	float: left;
+	margin-right: 2%;
+	min-height: 270px;
+
+	&:last-child {
+		width: 20%;
+		margin-right: 0;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	&_height {
+		height: 270px;
+	}
+
+	&__goods-img {
+		width: 100%;
+		max-width: 300px;
+		display: block;
+	}
+}
+
+.max-width {
+	width: 100%;
+}
+
+.is-empty {
+	background: $color-header;
+
+	&:empty {
+		background-image: url(../images/camera.svg);
+		background-repeat: no-repeat;
+    	background-position: 50% 50%;
+    	cursor: pointer;
+	}
+}

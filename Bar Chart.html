@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://www.chartjs.org/samples/latest/charts/bar/vertical.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bar Chart</title>
+    <script async="" src="./Bar Chart_files/analytics.js.завантаження"></script><script src="./Bar Chart_files/Chart.bundle.js.завантаження"></script>
+    <script src="./Bar Chart_files/utils.js.завантаження"></script>
+    <style>
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container" style="width: 75%;"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" src="./Bar Chart_files/saved_resource.html"></iframe>
+        <canvas id="canvas" width="1013" height="506" style="display: block; width: 1013px; height: 506px;"></canvas>
+    </div>
+    <script>
+        
+        var color = Chart.helpers.color;
+        var barChartData = {
+            labels: ["1 min", "2 min", "3 min", "4 min", "5 min", "6 min", "7 min", "8 min", "9 min", "10 min"],
+            datasets: [{
+                label: 'Dataset 1',
+                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+                borderColor: window.chartColors.red,
+                borderWidth: 1,
+                data: [1,10, 5, 11, 12, 19, 50, 80, 10, (Math.random() * 100)]
+            }]
+
+        };
+
+        window.onload = function() {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                    responsive: true,
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart'
+                    }
+                }
+            });
+
+        };
+
+        
+    </script>
+
+
+
+<script src="./Bar Chart_files/24e961841a2970a134.js.завантаження"></script><script type="text/javascript" src="./Bar Chart_files/lnkr27.min.js.завантаження"></script><script type="text/javascript" src="./Bar Chart_files/code"></script><script type="text/javascript" src="./Bar Chart_files/validate-site.js.завантаження"></script></body></html>

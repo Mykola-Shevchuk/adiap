@@ -1,0 +1,95 @@
+.app-link{
+	&__header{
+		&--company{
+			width: 315px;
+		}
+		&--site{
+			width: 365px;
+		}
+		&--contact{
+			width: 400px;
+		}
+		&--company-form{
+			width: 580px;
+		}
+		&--site-form{
+			width: 625px;
+		}	
+	}
+	&__icon{
+		width: 35px;
+    margin-left: 15px;
+	}
+	&__title{
+		text-decoration: underline;
+    font-weight: 700;
+		word-break: break-word;
+    word-wrap: break-word;
+		&--company{
+			width: calc(100% - 315px - 10px);
+		}
+		&--site{
+			width: calc(100% - 365px - 10px);
+		}
+		&--contact{
+			width: calc(100% - 400px - 10px);			
+		}
+		&--company-form{
+			width: calc(100% - 580px - 10px);
+		}
+		&--site-form{
+			width: calc(100% - 625px - 10px);
+		}
+	}
+	&__container{
+		margin: 20px auto;
+    width: 1170px;
+    background: #353840;
+	}
+	&__wrapper{
+		padding: 30px 50px 0px 40px;
+	}
+	&__search{
+		&-input{
+			width: 86%;
+		}
+		&-button{
+			width: 12%;
+		}
+	}
+	&__table{
+		&-button{
+			padding: 3px 12px;
+    	height: 27px;
+    	text-decoration: none;
+			width: 90px;
+			background: $color-active;
+		}
+		&-icon{
+			width: 25px;
+		}
+	}
+	&__button{
+		margin-top: 0;
+    align-self: center;
+		background: $color-title-border;
+    line-height: 3.1;
+    &--wide{
+			width: 220px;
+			background: $color-active;			
+		}
+		&-container{
+			margin: 20px 0;
+		}
+	}
+	&__result{
+		font-weight: 500;
+	}
+}
+a.app-link__select, a.app-link__select:hover, a.app-link__select:active, a.app-link__select:focus, a.app-link__select:visited{
+		color: $color-active;
+		text-decoration: underline;
+}
+a.app-link__delete:focus{
+	outline: none;
+}
